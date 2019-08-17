@@ -2,10 +2,17 @@
 
 <template>
     <div>
-        <SearchBar @termChange="onTermChange">
-        </SearchBar>
-        <VideoList :videos="videos">
-        </VideoList>
+        <div class="columns is-centered">
+            <SearchBar @termChange="onTermChange" class="column is-half">
+            </SearchBar>
+        </div>
+        <div class="columns main-column">
+            <div class="column is-two-thirds">
+                Video goes here
+            </div>
+            <VideoList :videos="videos" class="column is-one-third">
+            </VideoList>
+        </div>
     </div>
 </template>
 
@@ -44,3 +51,11 @@ export default {
     }
 };
 </script>
+
+<style>
+    @import "~bulma/css/bulma.css";
+    .main-column {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+</style>

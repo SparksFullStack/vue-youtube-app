@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="searchBarContainer">
         <input @input="onInput" @change="onInputChange"/>
     </div>
 </template>
@@ -24,5 +24,8 @@ export default {
 </script>
 
 <style scoped>
-
+    .searchBarContainer,
+    .searchBarContainer > input {
+        width: 100%;
+    }
 </style>
