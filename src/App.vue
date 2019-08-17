@@ -2,7 +2,7 @@
 
 <template>
     <div>
-        <div class="columns is-centered">
+        <div class="columns is-centered searchbar-column">
             <SearchBar @termChange="onTermChange" class="column is-half">
             </SearchBar>
         </div>
@@ -54,8 +54,14 @@ export default {
 
 <style>
     @import "~bulma/css/bulma.css";
+    
+    .searchbar-column {
+        margin-top: 15px;
+    }
+
     .main-column {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 </style>

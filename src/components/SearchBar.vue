@@ -1,6 +1,6 @@
 <template>
     <div class="searchBarContainer">
-        <input @input="onInput" @change="onInputChange"/>
+        <input @input="onInput" @change="onInputChange" class="input is-primary" type="text" placeholder="Search here..." />
     </div>
 </template>
 

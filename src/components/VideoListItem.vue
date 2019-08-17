@@ -1,7 +1,7 @@
 <template>
     <li class="columns">
         <div class="column is-one-quarter">
-            test1
+            <img :src="video.snippet.thumbnails.default.url" class="list-thumbail"/>
         </div>
 
         <div class="column">
@@ -20,5 +20,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
