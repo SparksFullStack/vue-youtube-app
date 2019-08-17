@@ -1,6 +1,6 @@
 <template>
     <div>
-        <SearchBar>
+        <SearchBar v-on:termChange="onTermChange">
         </SearchBar>
     </div>
 </template>
@@ -12,6 +12,11 @@ export default {
     name: 'App',
     components: {
         SearchBar
+    },
+    methods: {
+        onTermChange(searchTerm) {
+            alert(searchTerm);
+        }
     }
 };
 </script>
